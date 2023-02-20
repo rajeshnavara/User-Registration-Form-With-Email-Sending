@@ -1,0 +1,13 @@
+{% extends 'Dummy.html' %}
+
+{% block title %}
+    <title>Main Page</title>
+{% endblock %}
+
+{% block body_block %}
+{% if username %}
+    <h1>Welcome to Main Page {{username}}</h1>
+{% else %}
+    <h1>Welcome to Main Page!!!</h1>
+{% endif %}
+{% endblock %}

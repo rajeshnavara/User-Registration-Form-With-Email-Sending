@@ -1,0 +1,13 @@
+{% extends 'Dummy.html' %}
+
+{% block title %}
+    <title>Profile Page</title>
+{% endblock %}
+
+{% block body_block %}
+<h1>Check the details of the user profile</h1>
+<h1>Name   : {{UO.username}}</h1><br>
+<h1>Email  : {{UO.email}}</h1><br>
+<h1>Address: {{PO.Address}}</h1><br>
+<img src="{{PO.Pro_Pic.url}}" alt="Image Not Found">
+{% endblock %}
